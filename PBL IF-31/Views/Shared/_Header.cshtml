@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "";
+    
+}
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" style="background-color: floralwhite">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">
+                <img src="~/aset/logo.png" style="height: 30px; width: 60px">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-font" style="color: #FB9E3A" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-font" style="color: #FB9E3A" asp-area="" asp-controller="Divisi" asp-action="Index">Divisi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-font" style="color: #FB9E3A" asp-area="" asp-controller="Proyek" asp-action="Index">Proyek</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse d-sm-inline-flex">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item ms-auto">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Login" asp-action="Login">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+                                 class="rounded-circle"
+                                 height="30"
+                                 alt=""
+                                 loading="lazy" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+</header>

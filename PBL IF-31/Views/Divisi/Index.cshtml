@@ -1,0 +1,32 @@
+﻿@model IEnumerable<PBL_IF_31.Models.Divisi>
+
+@{
+    ViewData["Title"] = "Data Divisi";
+}
+
+<h2>Data Divisi</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nama Divisi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NamaDivisi</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="1" class="text-center">Data tidak ditemukan.</td>
+            </tr>
+        }
+    </tbody>
+</table>
